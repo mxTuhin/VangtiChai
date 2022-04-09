@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:text="Taka: "
-                android:textColor="#FFFFFF"
+                android:textColor="#3CD0E3"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +64,7 @@
                     android:paddingRight="30dp"
                     android:text="500: 0"
                     android:textAlignment="textStart"
-                    android:textColor="@color/white"
+                    android:textColor="#F1B061"
                     android:textSize="20sp" />
 
                 <TextView
@@ -77,7 +77,7 @@
                     android:paddingRight="30dp"
                     android:text="100: 0"
                     android:textAlignment="textStart"
-                    android:textColor="@color/white"
+                    android:textColor="#F1B061"
                     android:textSize="20sp" />
 
                 <TextView
@@ -90,7 +90,7 @@
                     android:paddingRight="30dp"
                     android:text="50: 0"
                     android:textAlignment="textStart"
-                    android:textColor="@color/white"
+                    android:textColor="#F1B061"
                     android:textSize="20sp" />
 
                 <TextView
@@ -103,7 +103,7 @@
                     android:paddingRight="30dp"
                     android:text="20: 0"
                     android:textAlignment="textStart"
-                    android:textColor="@color/white"
+                    android:textColor="#F1B061"
                     android:textSize="20sp" />
 
 
@@ -136,7 +136,7 @@
                     android:paddingRight="30dp"
                     android:text="10: 0"
                     android:textAlignment="textStart"
-                    android:textColor="@color/white"
+                    android:textColor="#F1B061"
                     android:textSize="20sp" />
 
                 <TextView
@@ -149,7 +149,7 @@
                     android:paddingRight="30dp"
                     android:text="5: 0"
                     android:textAlignment="textStart"
-                    android:textColor="@color/white"
+                    android:textColor="#F1B061"
                     android:textSize="20sp" />
 
                 <TextView
@@ -162,7 +162,7 @@
                     android:paddingRight="30dp"
                     android:text="2: 0"
                     android:textAlignment="textStart"
-                    android:textColor="@color/white"
+                    android:textColor="#F1B061"
                     android:textSize="20sp" />
 
                 <TextView
@@ -175,7 +175,7 @@
                     android:paddingRight="30dp"
                     android:text="1: 0"
                     android:textAlignment="textStart"
-                    android:textColor="@color/white"
+                    android:textColor="#F1B061"
                     android:textSize="20sp" />
 
 
@@ -203,7 +203,7 @@
                 android:paddingRight="30dp"
                 android:text="500: 0"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
+                android:textColor="#F1B061"
                 android:textSize="20sp" />
 
             <TextView
@@ -216,7 +216,7 @@
                 android:paddingRight="30dp"
                 android:text="100: 0"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
+                android:textColor="#F1B061"
                 android:textSize="20sp" />
 
             <TextView
@@ -229,7 +229,7 @@
                 android:paddingRight="30dp"
                 android:text="50: 0"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
+                android:textColor="#F1B061"
                 android:textSize="20sp" />
 
             <TextView
@@ -242,7 +242,7 @@
                 android:paddingRight="30dp"
                 android:text="20: 0"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
+                android:textColor="#F1B061"
                 android:textSize="20sp" />
 
             <TextView
@@ -255,7 +255,7 @@
                 android:paddingRight="30dp"
                 android:text="10: 0"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
+                android:textColor="#F1B061"
                 android:textSize="20sp" />
 
             <TextView
@@ -268,7 +268,7 @@
                 android:paddingRight="30dp"
                 android:text="5: 0"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
+                android:textColor="#F1B061"
                 android:textSize="20sp" />
 
             <TextView
@@ -281,7 +281,7 @@
                 android:paddingRight="30dp"
                 android:text="2: 0"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
+                android:textColor="#F1B061"
                 android:textSize="20sp" />
 
             <TextView
@@ -294,7 +294,7 @@
                 android:paddingRight="30dp"
                 android:text="1: 0"
                 android:textAlignment="textStart"
-                android:textColor="@color/white"
+                android:textColor="#F1B061"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -440,7 +440,7 @@
                     android:background="@color/loc_trans"
                     android:onClick="clearOnClick"
                     android:text="Clear"
-                    android:textColor="@color/white"
+                    android:textColor="#E14677"
                     android:textSize="20sp" />
 
 

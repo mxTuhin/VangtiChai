@@ -16,7 +16,11 @@ public class MainActivity extends AppCompatActivity {
     TextView numDigit;
     LinearLayout portrainLayout, landscapeLayout, cLandscapeLayout ,calcBox;
 
+    TextView[] portraitTexts = new TextView[8];
+    TextView[] landscapeTexts = new TextView[8];
+
     String tempDigit;
+    int[] notes = {500,100,50,20,10,5,2,1};
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -52,126 +56,111 @@ public class MainActivity extends AppCompatActivity {
         landscapeLayout.setVisibility(View.GONE);
         cLandscapeLayout.setVisibility(View.GONE);
 
+        portraitTexts[0] = findViewById(R.id.B500);
+        portraitTexts[1] = findViewById(R.id.B100);
+        portraitTexts[2] = findViewById(R.id.B50);
+        portraitTexts[3] = findViewById(R.id.B20);
+        portraitTexts[4] = findViewById(R.id.B10);
+        portraitTexts[5] = findViewById(R.id.B5);
+        portraitTexts[6] = findViewById(R.id.B2);
+        portraitTexts[7] = findViewById(R.id.B1);
+
+        landscapeTexts[0] = findViewById(R.id.BL500);
+        landscapeTexts[1] = findViewById(R.id.BL100);
+        landscapeTexts[2] = findViewById(R.id.BL50);
+        landscapeTexts[3] = findViewById(R.id.BL20);
+        landscapeTexts[4] = findViewById(R.id.BL10);
+        landscapeTexts[5] = findViewById(R.id.BL5);
+        landscapeTexts[6] = findViewById(R.id.BL2);
+        landscapeTexts[7] = findViewById(R.id.BL1);
+
+
+
     }
 
-    private void setWorkings(String givenValue)
+    private void setValue(String givenValue)
     {
         tempDigit += givenValue;
         numDigit.setText(tempDigit);
+        performCalculation(Integer.parseInt(tempDigit.split(" ")[1]));
     }
 
+    private void performCalculation(int _value){
 
-    public void equalsOnClick(View view)
-    {
-        Double result = null;
+        int amount = _value;
+        for(int i =0; i<notes.length; ++i){
+            int noteRequired = (int) (amount/notes[i]);
+            amount = amount-noteRequired*notes[i];
+            String toSet = notes[i]+": "+noteRequired;
+            portraitTexts[i].setText(toSet);
+            landscapeTexts[i].setText(toSet);
 
-
+        }
     }
 
-
-    private boolean isNumeric(char c)
-    {
-        if((c <= '9' && c >= '0') || c == '.')
-            return true;
-
-        return false;
-    }
 
 
     public void clearOnClick(View view)
     {
         numDigit.setText("Taka: ");
-        leftBracket = true;
-    }
-
-    boolean leftBracket = true;
-
-    public void bracketsOnClick(View view)
-    {
-        if(leftBracket)
-        {
-            setWorkings("(");
-            leftBracket = false;
-        }
-        else
-        {
-            setWorkings(")");
-            leftBracket = true;
+        tempDigit="Taka: ";
+        for(int i=0; i<portraitTexts.length; ++i){
+            String toSet = notes[i]+": 0";
+            portraitTexts[i].setText(toSet);
+            landscapeTexts[i].setText(toSet);
         }
     }
 
-    public void powerOfOnClick(View view)
-    {
-        setWorkings("^");
-    }
-
-    public void divisionOnClick(View view)
-    {
-        setWorkings("/");
-    }
 
     public void sevenOnClick(View view)
     {
-        setWorkings("7");
+        setValue("7");
     }
 
     public void eightOnClick(View view)
     {
-        setWorkings("8");
+        setValue("8");
     }
 
     public void nineOnClick(View view)
     {
-        setWorkings("9");
+        setValue("9");
     }
 
-    public void timesOnClick(View view)
-    {
-        setWorkings("*");
-    }
 
     public void fourOnClick(View view)
     {
-        setWorkings("4");
+        setValue("4");
     }
 
     public void fiveOnClick(View view)
     {
-        setWorkings("5");
+        setValue("5");
     }
 
     public void sixOnClick(View view)
     {
-        setWorkings("6");
+        setValue("6");
     }
-
-    public void minusOnClick(View view)
-    {
-        setWorkings("-");
-    }
+    
 
     public void oneOnClick(View view)
     {
-        setWorkings("1");
+        setValue("1");
     }
 
     public void twoOnClick(View view)
     {
-        setWorkings("2");
+        setValue("2");
     }
 
     public void threeOnClick(View view)
     {
-        setWorkings("3");
-    }
-
-    public void decimalOnClick(View view)
-    {
-        setWorkings(".");
+        setValue("3");
     }
 
     public void zeroOnClick(View view)
     {
-        setWorkings("0");
+        setValue("0");
     }
 }
